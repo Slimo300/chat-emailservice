@@ -32,6 +32,9 @@ func main() {
 		conf.SMTPPass,
 		conf.Origin,
 	)
+	if err != nil {
+		log.Fatalf("Error when creating email service: %v", err)
+	}
 
 	grpcServer := grpc.NewServer()
 	pb.RegisterEmailServiceServer(grpcServer, s)
