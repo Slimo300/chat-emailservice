@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"text/template"
 
-	"github.com/Slimo300/chat-emailservice/pkg/pb"
+	"github.com/Slimo300/chat-emailservice/pkg/client/pb"
 	"github.com/k3a/html2text"
 	"gopkg.in/gomail.v2"
 )
