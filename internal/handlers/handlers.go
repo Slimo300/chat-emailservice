@@ -55,6 +55,7 @@ func NewEmailService(emailDir, emailFrom, host string, port int, user, pass, ori
 		SMTPDialer: d,
 		Templates:  templateCache,
 		EmailFrom:  emailFrom,
+		Origin:     origin,
 	}, nil
 }
 
